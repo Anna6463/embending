@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Embedding Visualization</title>
+</head>
+
+<body>
+  <section class="main">
+    <div class="values">
+      <div class="logo">
+        <img src="/img/logo.PNG" alt="Logo">
+      </div>
+      <div class="line"></div>
+      <p class="text">Значение:</p>
+      <form class="main__form">
+        <select class="embedding-method" name="method">
+          <option value="">Выберите метод</option>
+          <option value="ruBERT">RuBERT</option>
+          <option value="sbert_large_mt_nlu_ru">HuggingFace</option>
+          <option value="multilingual-e5-large">HuggingFace_1</option>
+          <option value="text-embedding-ada-002">OpenAI</option>
+          <option value="ya-model-1">Яндекс через API</option>
+        </select>
+        <div class="form__container">
+          <!--<input type="text" class="sentence-0" placeholder="Введите текст">
+        <button type="button" class="btn__removeSentence btn-reset btn-add"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+        -->
+        </div>
+        <button type="button" class="btn__addSentence btn-reset btn-add">+ Добавить</button>
+
+        <button disabled class="btn__vector btn-reset">Моделировать</button>
+      </form>
+    </div>
+
+    <div class="result">
+      <div class="result__inner">
+        <p class="result__text">Выберите <span>модель для эмбендинга текста:</span></p>
+        <i class="fa fa-times  result-icon-model" aria-hidden="true"></i>
+      </div>
+      <div class="result__inner">
+        <p class="result__text">Выберите минимум <span>три значения:</span></p>
+        <img src="" alt="" class="result__value">
+        <i class="fa fa-times result-icon-value" aria-hidden="true"></i>
+      </div>
+
+
+      <div class='visualization'>
+        <img class="plot" src="/img/images.jpg">
+      </div>
+      <button type="button" class="btn__visualization btn-reset">Скрыть
+        <i class="fa fa-eye-slash myIcon" aria-hidden="true"></i>
+      </button>
+    </div>
+
+  </section>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

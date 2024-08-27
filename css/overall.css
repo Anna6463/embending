@@ -1,0 +1,15 @@
+.container{
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
+};
+
+.site-container{
+    overflow: hidden;
+}
+
+.btn-reset{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
